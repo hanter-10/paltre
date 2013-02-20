@@ -1,1 +1,6 @@
 /lib/Cake/Console/Templates/skel/tmp/
+.buildpath
+.project
+.settings/
+app/tmp/cache/
+app/tmp/logs/
