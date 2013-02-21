@@ -3,19 +3,19 @@
 function setPosition(){
 	target = document.getElementById('sampleform');
 	
-	//ƒ}ƒEƒX‚ğ“®‚©‚µ‚½‚Æ‚«
+	//ãƒã‚¦ã‚¹ã‚’å‹•ã‹ã—ãŸã¨ã
 	window.document.onmousemove = function(e){
 		target.onmouseX.value = getMousePosition(e).x;
 		target.onmouseY.value = getMousePosition(e).y;
 	}
 	
-	//ƒ}ƒEƒXƒNƒŠƒbƒN‚ğˆøã‚°‚½‚Æ‚«
+	//ãƒã‚¦ã‚¹ã‚¯ãƒªãƒƒã‚¯ã‚’å¼•ä¸Šã’ãŸã¨ã
 	window.document.onmouseup = function(e){
 		target.onmouseupX.value = getMousePosition(e).x;
 		target.onmouseupY.value = getMousePosition(e).y;
 	}
 	
-	//ƒ}ƒEƒXƒNƒŠƒbƒN‚ğ‰Ÿ‰º‚µ‚½‚Æ‚«
+	//ãƒã‚¦ã‚¹ã‚¯ãƒªãƒƒã‚¯ã‚’æŠ¼ä¸‹ã—ãŸã¨ã
 	window.document.onmousedown = function(e){
 		target.onmousedownX.value = getMousePosition(e).x;
 		target.onmousedownY.value = getMousePosition(e).y;
@@ -72,7 +72,7 @@ function getMousePosition(e) {
 	</ul>
 	
 	<?php
-		echo $this->Html->image('frankey.jpg', array('alt' => 'ƒtƒ‰ƒ“ƒL[', 'height' => 800, 'width' => 480, 'onmouseover' => 'setPosition()'));
+		echo $this->Html->image('frankey.jpg', array('alt' => 'ãƒ•ãƒ©ãƒ³ã‚­ãƒ¼', 'height' => 800, 'width' => 480, 'onmouseover' => 'setPosition()'));
 	?>
 	
 	<form action="" method="" id="sampleform">
