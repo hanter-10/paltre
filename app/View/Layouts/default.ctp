@@ -35,8 +35,15 @@
 <body>
 	<!-- Make sure all your bars are the first things in your <body> -->
 	<header class="bar-title">
-		<h1 class="title">Ratchet</h1>
+		<a class="button" href="#">
+			Left
+		</a>
+		<h1 class="title">Title</h1>
+		<a class="button" href="#">
+			Right
+		</a>
 	</header>
+
 	<?php echo $this->fetch('content'); ?>
 
 	<?php echo $this->element('sql_dump'); ?>
