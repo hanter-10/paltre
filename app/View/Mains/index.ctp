@@ -2,19 +2,19 @@
 
 function setPosition(){
 	target = document.getElementById('sampleform');
-	
+
 	//マウスを動かしたとき
 	window.document.onmousemove = function(e){
 		target.onmouseX.value = getMousePosition(e).x;
 		target.onmouseY.value = getMousePosition(e).y;
 	}
-	
+
 	//マウスクリックを引上げたとき
 	window.document.onmouseup = function(e){
 		target.onmouseupX.value = getMousePosition(e).x;
 		target.onmouseupY.value = getMousePosition(e).y;
 	}
-	
+
 	//マウスクリックを押下したとき
 	window.document.onmousedown = function(e){
 		target.onmousedownX.value = getMousePosition(e).x;
@@ -25,7 +25,7 @@ function setPosition(){
 
 function getMousePosition(e) {
 	var obj = new Object();
-	 
+
 	if(e) {
 		obj.x = e.pageX;
 		obj.y = e.pageY;
@@ -34,7 +34,7 @@ function getMousePosition(e) {
 		obj.x = event.x + document.body.scrollLeft;
 		obj.y = event.y + document.body.scrollTop;
 	}
-	 
+
 	return obj;
 }
 </script>
@@ -70,11 +70,8 @@ function getMousePosition(e) {
 			</a>
 		</li>
 	</ul>
-	
-	<?php
-		echo $this->Html->image('frankey.jpg', array('alt' => 'フランキー', 'height' => 800, 'width' => 480, 'onmouseover' => 'setPosition()'));
-	?>
-	
+
+	<!--
 	<form action="" method="" id="sampleform">
 		<ul>
 		<li>onmouseX: <input type="text" value="" name="onmouseX" /></li>
@@ -86,4 +83,38 @@ function getMousePosition(e) {
 		</ul>
 	</form>
 
+	<div style="user-select: none;" >
+	<a href="JavaScript:void()" onmouseover="setPosition();">
+	<?php
+		echo $this->Html->image('frankey.jpg', array('alt' => 'フランキー', 'height' => 800, 'width' => 480));
+	?>
+	</a>
+	</div>
+	-->
+
+	<div id="viewer"></div>
+	<script type="text/javascript">
+		tt(function(){
+			var meta = document.createElement("meta"),
+		    	left = {
+		            //vertex: [262, 452],
+		            //rect:   [[209, 369], [323, 520]]
+		            vertex: [75, 85],						// ｵﾊﾟｰｲ頂点
+		            rect:   [[50, 80], [93, 115]]			// ｵﾊﾟｰｲ範囲
+		        },
+		        right = {
+		            //vertex: [377, 445],						// ｵﾊﾟｰｲ頂点
+		            //rect:   [[324, 369], [429, 513]]		// ｵﾊﾟｰｲ範囲
+		            vertex: [110, 85],						// ｵﾊﾟｰｲ頂点
+					rect:   [[94, 80], [125, 120]]			// ｵﾊﾟｰｲ範囲
+		        };
+
+		    meta.name = "viewport";
+		    meta.content = "width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1";
+
+		    tt("head").add(meta);
+		    oppai("http://localhost:8888/paltre/img/frankey.jpg", "#viewer", left, right);			// 画像とElement指定
+		    //oppai("https://dl.dropbox.com/s/jov7a7mugkbfk9e/pai_01.jpg", "#viewer", left, right);
+		});
+	</script>
 </div>

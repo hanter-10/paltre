@@ -20,7 +20,9 @@
 	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('ratchet.css');
-		echo $this->Html->script('ratchet.js');
+		//echo $this->Html->script('ratchet.js');
+		echo $this->Html->script('http://jsrun.it/damele0n/kXAJ/js');
+		echo $this->Html->script('http://jsrun.it/damele0n/saWA/js');
 	?>
 
 	<style type="text/css">
@@ -36,7 +38,7 @@
 		<h1 class="title">Ratchet</h1>
 	</header>
 	<?php echo $this->fetch('content'); ?>
-	
+
 	<?php echo $this->element('sql_dump'); ?>
 </body>
 </html>
