@@ -43,7 +43,7 @@ class MainsController extends AppController {
  *
  * @var array
  */
-	public $uses = array();
+	public $uses = array('DatPost','DatPostSearch');
 
 
 	public function index() {
@@ -53,6 +53,13 @@ class MainsController extends AppController {
 
 		// データセット
 		$this->set(compact('title_for_layout'));
+
+		echo '<pre>';
+		// 最新のトレンドデータ取得
+		$TrendData = $this->DatPost->getPostDataByTrend(30);
+		var_dump($TrendData);
+		echo '</pre>';
+		exit;
 
 		// View出力
 		$this->render();
