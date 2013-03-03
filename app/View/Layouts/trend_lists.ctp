@@ -23,11 +23,6 @@
 		echo $this->Html->script('http://code.jquery.com/jquery-1.9.1.min.js');
 		echo $this->Html->script('http://kawika.org/jquery/js/jquery.autolink.js');
 		echo $this->Html->script('ratchet.js');
-		echo $this->Html->script('tt.js');
-		echo $this->Html->script('Oppai.js');
-
-		//echo $this->Html->script('http://jsrun.it/damele0n/kXAJ/js');
-		//echo $this->Html->script('http://jsrun.it/damele0n/saWA/js');
 	?>
 
 	<style type="text/css">

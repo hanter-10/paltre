@@ -49,13 +49,30 @@ class MainsController extends AppController {
 	public function index() {
 
 		// タイトル
-		$title_for_layout = 'Space';
+		$title_for_layout = 'ぱるトレ';
 
 		// 最新のトレンドデータ取得
 		$TrendData = $this->DatPost->getPostDataByTrend(30);
 
 		// データセット
 		$this->set(compact('title_for_layout', 'TrendData'));
+
+		// View出力
+		$this->render();
+	}
+
+	public function lists($id) {
+
+		$this->layout = 'trend_lists';
+
+		// タイトル
+		$title_for_layout = 'ぱるトレ';
+
+		// トレンドデータに紐づくつぶやき取得
+		$TrendSearchData = $this->DatPostSearch->getPostSearchDataByPostId($id);
+
+		// データセット
+		$this->set(compact('title_for_layout', 'TrendSearchData'));
 
 		// View出力
 		$this->render();
