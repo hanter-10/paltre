@@ -51,15 +51,11 @@ class MainsController extends AppController {
 		// タイトル
 		$title_for_layout = 'Space';
 
-		// データセット
-		$this->set(compact('title_for_layout'));
-
-		echo '<pre>';
 		// 最新のトレンドデータ取得
 		$TrendData = $this->DatPost->getPostDataByTrend(30);
-		var_dump($TrendData);
-		echo '</pre>';
-		exit;
+
+		// データセット
+		$this->set(compact('title_for_layout', 'TrendData'));
 
 		// View出力
 		$this->render();

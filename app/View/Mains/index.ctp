@@ -37,38 +37,43 @@ function getMousePosition(e) {
 
 	return obj;
 }
+
+$(function() {
+	$('#viewer').click(function() {
+		var trend = $('#viewer').prev('ul').find('li');
+		var max_count = trend.length -1;
+
+		for( var i=0; i < trend.length; i++ ){
+			if (trend[i].className == 'segmented-controller-item active') {
+				trend.eq(i).removeClass('active');
+				var j = i+1;
+				if (i === max_count) {
+					j = 0;
+				}
+				trend.eq(j).show('slide');
+				trend.eq(j).css('display', '');
+				trend.eq(j).addClass('active');
+				return;
+			}
+		}
+		return;
+	});
+});
+
+
 </script>
 <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
 <div class="content">
 	<div class="content-padded">
 		<p class="welcome">
-			ぱるるんトレーダー：トレンドをお送りします。
+			最新のトレンドを紹介!!
 		</p>
 	</div>
-
-	<ul class="segmented-controller">
-		<li class="active">
-			<a href="#item1">Thing one</a>
-		</li>
-		<li>
-			<a href="#item2">Thing two</a>
-		</li>
-		<li>
-			<a href="#item3">Thing three</a>
-		</li>
-	</ul>
-	<ul class="inset list">
-		<li id="item1" class="segmented-controller-item active">
-			Item 1
-		</li>
-		<li id="item2" class="segmented-controller-item">
-			Item 2
-		</li>
-		<li id="item3" class="segmented-controller-item">
-			Item 3
-		</li>
-	</ul>
-
+	<?php
+	echo $this->element('trendbox', array(
+		"TrendData" => $TrendData,
+	));
+	?>
 	<div id="viewer" ></div>
 	<script type="text/javascript">
 		tt(function(){
@@ -95,6 +100,7 @@ function getMousePosition(e) {
 
 		    tt("head").add(meta);
 		    oppai("http://paltre.pk-brs.com/img/s_20110905_graviaidolnishida_16.jpg", "#viewer", left, right);
+		    //oppai("http://paltre.pk-brs.com/img/akb48.jpeg", "#viewer", left, right);
 		    //oppai("http://paltre.pk-brs.com/img/frankey.jpg", "#viewer", left, right);			// 画像とElement指定
 		    //oppai("https://dl.dropbox.com/s/jov7a7mugkbfk9e/pai_01.jpg", "#viewer", left, right);
 		});

@@ -20,9 +20,12 @@
 	<?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('ratchet.css');
-		//echo $this->Html->script('ratchet.js');
-		echo $this->Html->script('http://jsrun.it/damele0n/kXAJ/js');
-		echo $this->Html->script('http://jsrun.it/damele0n/saWA/js');
+		echo $this->Html->script('http://code.jquery.com/jquery-1.9.1.min.js');
+		echo $this->Html->script('ratchet.js');
+		echo $this->Html->script('tt.js');
+		echo $this->Html->script('Oppai.js');
+		//echo $this->Html->script('http://jsrun.it/damele0n/kXAJ/js');
+		//echo $this->Html->script('http://jsrun.it/damele0n/saWA/js');
 	?>
 
 	<style type="text/css">
@@ -38,7 +41,7 @@
 		<a class="button" href="#">
 			Left
 		</a>
-		<h1 class="title">Title</h1>
+		<h1 class="title">ぱるるんﾄﾚﾝﾀﾞｰ</h1>
 		<a class="button" href="#">
 			Right
 		</a>
