@@ -147,6 +147,8 @@
             this.animation = new Animation2D("bounseout");
 
             // set canvas element
+            //this.canvas.id = 'titi';
+            this.canvas.setAttribute('class', 'titi');
             this.canvas.width = this.width;
             this.canvas.height = this.height;
             tt(this.canvas).css({
