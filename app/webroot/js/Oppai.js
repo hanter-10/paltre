@@ -87,7 +87,7 @@
         img.onload = function() {
             viewer.css({
                 "position":   "relative",
-                "margin":     "0 auto",
+                "margin":     "0 auto",			// センター寄せ : '0 auto'
                 "width":      img.width + "px",
                 "height":     img.height + "px",
                 "background": "url(" + img_path + ") no-repeat left top",
