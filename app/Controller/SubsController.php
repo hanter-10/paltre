@@ -54,7 +54,7 @@ class SubsController extends AppController {
 		$title_for_layout = 'ぱるトレ';
 
 		// 最新のトレンドデータ取得
-		$TrendData = $this->DatPost->getPostDataByTrend(30);
+		$TrendData = $this->DatPost->getPostDataByAll(30);
 
 		// データセット
 		$this->set(compact('title_for_layout', 'TrendData'));

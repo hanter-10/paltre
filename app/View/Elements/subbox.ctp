@@ -1,8 +1,8 @@
 <?php foreach ($TrendData as $key => $trend) :?>
 	<?php if ($key == 0): ?>
-	<li id="item<?php echo $key;?>" class="active">
+	<li id="item<?php echo $key;?>" class="active" style="display: none;">
 	<?php else:?>
-	<li id="item<?php echo $key;?>" class="">
+	<li id="item<?php echo $key;?>" class="" style="display: none;">
 	<?php endif; ?>
 		<?php $post_id = $trend['DatPost']['id']; ?>
 		<a href="<?php echo $this->Html->url('/mains/lists/'.$trend['DatPost']['id'], false); ?>">

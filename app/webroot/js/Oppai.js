@@ -286,6 +286,25 @@
         _touchAnimation: function(fromVertex) {
             var self = this;
 
+            var trend = $('#viewer').parent().next().find('li');
+    		var max_count = trend.length -1;
+
+    		// TODO:イベントが取れないので無理やりここで実装する。
+    		for( var i=0; i < trend.length; i++ ) {
+    			if (trend[i].className == 'active' || trend[i].className == 'nav-header active') {
+    				trend.eq(i).removeClass('active');
+    				trend.eq(i).hide();
+    				var j = i+1;
+    				if (i === max_count) {
+    					j = 0;
+    				}
+    				trend.eq(j).show('slide');
+    				trend.eq(j).css('display', '');
+    				trend.eq(j).addClass('active');
+    				break;
+    			}
+    		}
+
             this.animation.play(fromVertex, this.vertex, 600, function(value, isContinue) {
                 self.transform(value);
                 isContinue || (self._startVertex = null);
