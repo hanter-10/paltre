@@ -286,18 +286,28 @@
         _touchAnimation: function(fromVertex) {
             var self = this;
 
+            // TODO:イベントが取れないので無理やりここで実装する。
+            var opps = $("#viewer canvas").index(this.canvas);				// どちらか判断( 0:左 1:右 )
             var trend = $('#viewer').parent().next().find('li');
-    		var max_count = trend.length -1;
+            var max_count = trend.length -1;
 
-    		// TODO:イベントが取れないので無理やりここで実装する。
-    		for( var i=0; i < trend.length; i++ ) {
+            for( var i=0; i < trend.length; i++ ) {
     			if (trend[i].className == 'active' || trend[i].className == 'nav-header active') {
     				trend.eq(i).removeClass('active');
     				trend.eq(i).hide();
-    				var j = i+1;
-    				if (i === max_count) {
-    					j = 0;
+
+    				var j = i;
+    				// 判断
+    				if (opps === 0) {
+    					// 左の場合
+    					j = j-1;
+    					if (i === 1) j = max_count;
+    				} else if (opps === 1) {
+    					// 右の場合
+    					j = j+1;
+    					if (i === max_count) j = 1;
     				}
+
     				trend.eq(j).show('slide');
     				trend.eq(j).css('display', '');
     				trend.eq(j).addClass('active');
