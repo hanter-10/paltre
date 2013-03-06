@@ -65,7 +65,7 @@ class SubsController extends AppController {
 
 	public function lists($id) {
 
-		$this->layout = 'sub_lists';
+		$this->layout = 'sub';
 
 		// タイトル
 		$title_for_layout = 'ぱるトレ';
