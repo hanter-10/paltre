@@ -124,13 +124,13 @@ $(function() {
 });
 </script>
 	<div class="page-header">
-		<h2 style="display: none;">そう。手を伸ばせば届くんだ。</h2>
-		<h2 style="display: none;">周りの目は気にすんな。びびんじゃねー。</h2>
-		<h2 style="display: none;">煩悩の数だけ叩くがいい。</h2>
-		<h2 style="display: none;">考える事なんてあるか？</h2>
-		<h2 style="display: none;">答えは,目の前にある。</h2>
-		<h2 style="display: none;">バカヤロー！そこじゃない。</h2>
-		<h2 style="display: none;">右っ！左っ！右っ！右っ！！</h2>
+		<h3 style="display: none;">そう。手を伸ばせば届くんだ。</h3>
+		<h3 style="display: none;">周りの目は気にすんな。びびんじゃねー。</h3>
+		<h3 style="display: none;">煩悩の数だけ叩くがいい。</h3>
+		<h3 style="display: none;">考える事なんてあるか？</h3>
+		<h3 style="display: none;">答えは,目の前にある。</h3>
+		<h3 style="display: none;">バカヤロー！そこじゃない。</h3>
+		<h3 style="display: none;">右っ！左っ！右っ！右っ！！</h3>
 	</div>
    	<div id="viewer"></div>
 	<script type="text/javascript" id="oppai">
