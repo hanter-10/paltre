@@ -5,7 +5,7 @@
 	<li id="item<?php echo $key;?>" class="" style="display: none;">
 	<?php endif; ?>
 		<?php $post_id = $trend['DatPost']['id']; ?>
-		<a href="<?php echo $this->Html->url('/subs/lists/'.$trend['DatPost']['id'], false); ?>">
+		<a href="<?php echo $this->Html->url('/Mains/lists/'.$trend['DatPost']['id'], false); ?>">
 		<?php echo $trend['DatPost']['source']; ?>
 		<span class="chevron"></span>
 		</a>

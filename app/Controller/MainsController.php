@@ -48,11 +48,13 @@ class MainsController extends AppController {
 
 	public function index() {
 
+		$this->layout = 'sub';
+
 		// タイトル
 		$title_for_layout = 'ぱるトレ';
 
 		// 最新のトレンドデータ取得
-		$TrendData = $this->DatPost->getPostDataByTrend(30, 1);
+		$TrendData = $this->DatPost->getPostDataByAll(30);
 
 		// データセット
 		$this->set(compact('title_for_layout', 'TrendData'));
@@ -63,7 +65,7 @@ class MainsController extends AppController {
 
 	public function lists($id) {
 
-		$this->layout = 'trend_lists';
+		$this->layout = 'sub';
 
 		// タイトル
 		$title_for_layout = 'ぱるトレ';
