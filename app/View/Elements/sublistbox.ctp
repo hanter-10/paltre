@@ -12,9 +12,7 @@
 		<li class="span4">
 	       <div class="thumbnail">
 	         <div class="caption">
-	           <h3>Thumbnail label</h3>
 	           <p><?php echo $trend['DatPostSearch']['source']; ?></p>
-	           <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
 	         </div>
 	       </div>
 	    </li>
