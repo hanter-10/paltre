@@ -124,15 +124,29 @@ $(function() {
 });
 </script>
 	<div class="page-header">
-		<h3 style="display: none;">そう。手を伸ばせば届くんだ。</h3>
-		<h3 style="display: none;">周りの目は気にすんな。びびんじゃねー。</h3>
-		<h3 style="display: none;">煩悩の数だけ叩くがいい。</h3>
-		<h3 style="display: none;">考える事なんてあるか？</h3>
-		<h3 style="display: none;">答えは,目の前にある。</h3>
-		<h3 style="display: none;">バカヤロー！そこじゃない。</h3>
-		<h3 style="display: none;">右っ！左っ！右っ！右っ！！</h3>
+		<h2 style="display: none;">そう。手を伸ばせば届くんだ。</h2>
+		<h2 style="display: none;">周りの目は気にすんな。びびんじゃねー。</h2>
+		<h2 style="display: none;">煩悩の数だけ叩くがいい。</h2>
+		<h2 style="display: none;">考える事なんてあるか？</h2>
+		<h2 style="display: none;">答えは,目の前にある。</h2>
+		<h2 style="display: none;">バカヤロー！そこじゃない。</h2>
+		<h2 style="display: none;">右っ！左っ！右っ！右っ！！</h2>
 	</div>
-   	<div id="viewer"></div>
+	<div class="span11">
+      <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+          <li class="nav-header">最新のトレンドを紹介!!</li>
+		  <?php
+			echo $this->element('subbox', array(
+				"TrendData" => $TrendData,
+			));
+		  ?>
+        </ul>
+      </div><!--/.well -->
+    </div><!--/span-->
+    <div class="span11">
+   		<div id="viewer"></div>
+   	</div>
 	<script type="text/javascript" id="oppai">
 		tt(function(){
 			var meta = document.createElement("meta"),
@@ -160,26 +174,14 @@ $(function() {
 	</div>
 	<div class="span4">
 		<div class="btn-group" data-toggle="buttons-radio" >
-		  <button type="button" class="btn btn-primary lleft">左左煩悩</button>
-		  <button type="button" class="btn btn-primary left">左煩悩</button>
-		  <button type="button" class="btn btn-primary center">中煩悩</button>
-		  <button type="button" class="btn btn-primary rigth">右煩悩</button>
-		  <button type="button" class="btn btn-primary rrigth">右右煩悩</button>
+		  <button type="button" class="btn btn-primary lleft">煩悩</button>
+		  <button type="button" class="btn btn-primary left">煩悩</button>
+		  <button type="button" class="btn btn-primary center">煩悩</button>
+		  <button type="button" class="btn btn-primary rigth">煩悩</button>
+		  <button type="button" class="btn btn-primary rrigth">煩悩</button>
 		</div>
 	</div>
 	<div class="span4">
 	</div>
-    </div><!--/span-->
-    <div class="span12">
-      <div class="well sidebar-nav">
-        <ul class="nav nav-list">
-          <li class="nav-header">最新のトレンドを紹介!!</li>
-		  <?php
-			echo $this->element('subbox', array(
-				"TrendData" => $TrendData,
-			));
-		  ?>
-        </ul>
-      </div><!--/.well -->
     </div><!--/span-->
   </div><!--/row-->

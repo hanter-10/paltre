@@ -1,6 +1,6 @@
 <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
 <div class="page-header">
-	<h3>トレンドの騒ぎ！</h3>
+	<h2>トレンドの騒ぎ！</h2>
 </div>
 <div id="autoLink">
 	<?php

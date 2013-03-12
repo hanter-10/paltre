@@ -288,7 +288,7 @@
 
             // TODO:イベントが取れないので無理やりここで実装する。
             var opps = $("#viewer canvas").index(this.canvas);				// どちらか判断( 0:左 1:右 )
-            var trend = $('#viewer').parent().next().find('li');
+            var trend = $('#viewer').parent().prev().find('li');
             var max_count = trend.length -1;
 
             for( var i=0; i < trend.length; i++ ) {
