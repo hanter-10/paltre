@@ -4,8 +4,14 @@
     <meta charset="utf-8">
     <title>ぱるトレ！</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="紳士的に且つ堂々と、煩悩の赴くままに世の中のトレンドをリサーチ！">
+    <meta name="keywords" content="ぱるるん,トレンド,おっぱい,煩悩,おっぱい ニュース,おっぱい トレンド,ばるるん トレンド">
+    <meta name="author" content="PK-Brothrts">
+    <meta property="og:title" content="ぱるるんトレンダー" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="http://paltre.pk-brs.com/img/sample4.JPG" />
+	<meta property="og:site_name" content="ぱるトレ！" />
+	<meta property="og:description" content="紳士的に且つ堂々と、煩悩の赴くままに世の中のトレンドをリサーチ！" />
 
     <!-- Le styles -->
     <?php
@@ -68,7 +74,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Company 2013</p>
+        <p>&copy; shori 2013</p>
       </footer>
 
 	<div class="span12">
