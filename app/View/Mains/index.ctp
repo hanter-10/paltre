@@ -125,13 +125,25 @@ $(function() {
 </script>
 	<div class="page-header">
 		<h2 style="display: none;">そう。手を伸ばせば届くんだ。</h2>
-		<h2 style="display: none;">周りの目は気にすんな。びびんじゃねー。</h2>
+		<h2 style="display: none;">周りの目は気にするな。</h2>
 		<h2 style="display: none;">煩悩の数だけ叩くがいい。</h2>
 		<h2 style="display: none;">考える事なんてあるか？</h2>
 		<h2 style="display: none;">答えは,目の前にある。</h2>
-		<h2 style="display: none;">バカヤロー！そこじゃない。</h2>
+		<h2 style="display: none;">煩悩の数だけ叩くがいい。</h2>
 		<h2 style="display: none;">右っ！左っ！右っ！右っ！！</h2>
 	</div>
+<div class="ninja_onebutton">
+<script type="text/javascript">
+//<![CDATA[
+(function(d){
+if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_f548093ff47378ef66f61313a92dce7e)=='undefined'){
+    document.write("<sc"+"ript type='text\/javascript' src='http:\/\/omt.shinobi.jp\/b\/f548093ff47378ef66f61313a92dce7e'><\/sc"+"ript>");
+}else{
+    window.NINJA_CO_JP_ONETAG_BUTTON_f548093ff47378ef66f61313a92dce7e.ONETAGButton_Load();}
+})(document);
+//]]>
+</script><span class="ninja_onebutton_hidden" style="display:none;"></span><span style="display:none;" class="ninja_onebutton_hidden"></span>
+</div>
 	<div class="span11">
       <div class="well sidebar-nav">
         <ul class="nav nav-list">
