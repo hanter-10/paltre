@@ -74,7 +74,7 @@
       <hr>
 
       <footer>
-        <p>&copy; shori 2013</p>
+        <p>&copy; PK-Brothers 2013</p>
       </footer>
 
 	<div class="span12">
