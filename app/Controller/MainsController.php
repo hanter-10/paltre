@@ -54,7 +54,7 @@ class MainsController extends AppController {
 		$title_for_layout = 'ぱるトレ';
 
 		// 最新のトレンドデータ取得
-		$TrendData = $this->DatPost->getPostDataByAll(30);
+		$TrendData = $this->DatPost->getPostDataByAll(50);
 
 		// データセット
 		$this->set(compact('title_for_layout', 'TrendData'));

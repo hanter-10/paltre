@@ -29,7 +29,7 @@ class DatPost extends AppModel {
 		/* 検索条件 */
 		$conditions = array(
 				'DatPost.flg'		=> $flg,				// 1:トレンド, 2:ハッシュタグ
-				'DatPost.status'	=> 1,				// 有効
+				'DatPost.status'	=> 1,					// 有効
 		);
 
 		// 順序
@@ -59,6 +59,7 @@ class DatPost extends AppModel {
 		/* 検索条件 */
 		$conditions = array(
 				'DatPost.status'	=> 1,				// 有効
+				'DatPost.twit_flg'	=> 1,				// 変換済み
 		);
 
 		// 順序
